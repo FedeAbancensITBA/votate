@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Creador de Boletas Electorales</title>
+    <title>Votate!</title>
 </head>
 <body>
     <div class="container">
         <h1>Creador de Boletas Electorales</h1>
+        <p>Frente a dos opciones inviables, este domingo no te regalés. ¡Votate a vos mismo!</p>
         <form id="ballot-form">
-            <label for="list-name">Nombre de la Lista:</label>
-            <input type="text" id="list-name" required>
+            <input placeholder="Elegí un nombre para tu lista" type="text" id="list-name" required>
 
-            <label for="candidate1">Candidato a Presidente:</label>
-            <input type="text" id="candidate1" required>
+            
+            <input placeholder="Candidato a Presidente" type="text" id="candidate1" required>
 
-            <label for="candidate2">Candidato a Vicepresidente:</label>
-            <input type="text" id="candidate2" required>
+            
+            <input placeholder="Candidato a Vicepresidente" type="text" id="candidate2" required>
 
             <label for="color1">Color 1:</label>
             <input type="color" id="color1" value="#ff0000">
@@ -28,13 +28,13 @@
             <label for="image-upload">Subir Foto:</label>
             <input type="file" id="image-upload" accept="image/*" required>
 
-            <button type="button" onclick="generateBallot()">Generar Boleta</button>
+            <button type="button" onclick="generateBallot()">GENERAR BOLETA</button>
         </form>
         <div id="ballot-preview" class="hidden">
             <h2>Vista Previa:</h2>
             <div id="generated-ballot" class="centered-content"></div>
             <!-- ... (sin cambios en el HTML) ... -->
-            <button type="button" onclick="downloadBallot()">Descargar Boleta</button>
+            <button type="button" onclick="downloadBallot()">DESCARGAR BOLETA</button>
         </div>        
     </div>
     

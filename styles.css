@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0; /* Eliminar el margen predeterminado del cuerpo del documento */
+    background-color: #199BD8;
 }
 
 .container {
     max-width: 600px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: white;
     position: relative; /* Asegurar que la posición sea relativa para que las barras estén posicionadas correctamente */
 }
 
@@ -28,6 +33,7 @@ body {
 }
 
 #generated-ballot {
+    font-family: Arial, sans-serif;
     border: 1px solid #ccc;
     padding: 0;
     margin: 0;
@@ -98,4 +104,31 @@ button {
 #ballot-form button {
     margin-bottom: 10px;
     width: 100%;
+}
+
+section input,
+section textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    outline: 0;
+    background-color: #F5F7FA;
+    padding: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1.4px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #199BD8;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h3, p {
+    margin: 0px;
 }

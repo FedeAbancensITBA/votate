@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminar el margen predeterminado del cuerpo del documento */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative; /* Asegurar que la posición sea relativa para que las barras estén posicionadas correctamente */
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#ballot-preview {
+    margin-top: 20px;
+}
+
+#generated-ballot {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    width: 435px;
+    height: 720px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Asegurar que la posición sea relativa para que las barras estén posicionadas correctamente */
+}
+
+#generated-ballot img {
+    width: 100%;
+    height: 282px;
+}
+
+#generated-ballot h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: ${calculateFontSize(listName)};    
+}
+
+#generated-ballot p {
+    margin: 0;
+}
+
+.gradient-bar {
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#top-bar {
+    top: 0;
+    background: linear-gradient(to right, #ff0000, #00ff00); /* Gradient por defecto */
+}
+
+#bottom-bar {
+    bottom: 0;
+    background: linear-gradient(to right, #ff0000, #00ff00); /* Gradient por defecto */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#color1, #color2 {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+/* ... (código anterior) ... */
+
+#ballot-form {
+    max-width: 100%;
+}
+
+#ballot-form label,
+#ballot-form input,
+#ballot-form button {
+    margin-bottom: 10px;
+    width: 100%;
+}
